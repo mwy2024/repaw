@@ -1,0 +1,105 @@
+.presentation-page [id] { scroll-margin-top: 80px; }
+.home-hero > div > p:not(.font-ui) { padding-right: 7rem; }
+.hero-actions a { transition: transform 0.2s; }
+.hero-actions a:hover { transform: translateY(-2px); }
+#philosophy { background: var(--color-site-black); }
+.philosophy-material, .philosophy-impact { padding: 6rem 3rem; background: var(--color-site-black); }
+.philosophy-material h2, .philosophy-impact h2 { font-size: clamp(56px, 7vw, 110px); line-height: 1.05; margin: 1.5rem 0 3rem; }
+.philosophy-material h2 span { color: var(--color-acid); }
+.philosophy-images { display: grid; grid-template-columns: minmax(0, 1fr); }
+.philosophy-process-image { display: block; width: 100%; height: auto; }
+.philosophy-impact .eyebrow { color: rgba(255,255,255,0.65); }
+.philosophy-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: #ffffff22; }
+.philosophy-stats > div { padding: 2.5rem; background: var(--color-site-black); }
+.philosophy-stats > div > span { color: var(--color-acid); font-size: clamp(3rem, 5vw, 5rem); line-height: 1; }
+.philosophy-stats h3 { margin: 1rem 0 0.7rem; font-size: 1rem; font-weight: 600; }
+.philosophy-stats p { font-size: 0.85rem; line-height: 1.8; color: #f5f2ecaa; }
+.scenario-banner { background: #e8e4dc; }
+.scenario-purchase { display: inline-flex; align-items: center; gap: 0.8rem; position: relative; padding: 0.4rem 0; background: none; color: #fff; font-size: 0.8rem; font-weight: 400; text-decoration: none; }
+.scenario-purchase > span { display: inline-block; transition: transform 0.3s ease; }
+a.scenario-purchase::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease; }
+a.scenario-purchase:hover > span, a.scenario-purchase:focus-visible > span { transform: translateX(5px); }
+a.scenario-purchase:hover::after, a.scenario-purchase:focus-visible::after { transform: scaleX(1); }
+.custom-section { padding-top: 0; }
+.custom-intro h2 { font-size: clamp(2.8rem, 4.6vw, 4.5rem); }
+.custom-intro h2 .custom-title-highlight { color: #344533; background: linear-gradient(transparent 48%, var(--color-acid) 48%, var(--color-acid) 92%, transparent 92%); padding: 0 0.12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.community-events-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; }
+.workshop-hero h2 { font-size: clamp(2.8rem, 5.5vw, 6rem); letter-spacing: -0.06em; line-height: 1.05; margin: 1.5rem 0 2rem; color: #f5f2ec; }
+.workshop-hero h2 span { color: var(--color-acid); }
+.site-nav-links a[aria-current="location"] { color: var(--color-acid) !important; }
+:focus-visible { outline: 2px solid var(--color-acid); outline-offset: 4px; }
+
+.community-qr-dialog { position: fixed; inset: 0; margin: auto; width: min(420px, calc(100% - 2rem)); max-height: calc(100svh - 2rem); overflow: auto; padding: 3rem 2rem 2rem; border: 0; background: #fff; color: #111; text-align: center; box-shadow: 0 24px 80px #0004; }
+.community-qr-dialog::backdrop { background: #000b; }
+.community-qr-close { position: absolute; top: 0.6rem; right: 0.6rem; width: 40px; height: 40px; border: 0; background: #f2efe7; color: #111; font-size: 1.6rem; cursor: pointer; }
+.community-qr-dialog h3 { font-size: 1.45rem; margin: 0.5rem 0 1rem; }
+.community-qr-image { display: block; width: min(240px, 100%); height: auto; margin: 1rem auto; }
+.community-qr-dialog p { font-size: 0.8rem; color: #666; line-height: 1.7; }
+.join-button { display: inline-flex; align-items: center; padding: 1.1rem 2.5rem; background: var(--color-site-black); color: var(--color-acid); font: 700 0.85rem var(--font-ui); letter-spacing: 0.12em; text-transform: uppercase; border: 0; cursor: pointer; transition: transform 0.2s; }
+.join-button:hover { transform: translateY(-2px); }
+
+@media (min-width: 1000px) {
+  .custom-section { min-height: 0; }
+  .custom-section .custom-intro { padding: 1.5rem 1.25rem 1.25rem; }
+  .custom-section .custom-kicker { margin-bottom: 0.5rem; }
+  .custom-section .custom-intro h2 { font-size: clamp(32px, 3.4vw, 52px); margin-bottom: 0.65rem; }
+  .custom-section .custom-intro > p:last-child { font-size: 0.85rem; }
+  .custom-section .custom-workspace { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 1200px; padding-bottom: 2rem; }
+  .custom-section .custom-panel { padding: 1rem 1.25rem; }
+  .custom-section .custom-preview-panel { grid-column: auto; }
+  .custom-section .custom-panel-heading { min-height: 0; padding-bottom: 1rem; }
+  .custom-section .custom-panel-heading h2 { font-size: 1.5rem; margin: 0.5rem 0 0.4rem; }
+  .custom-section .custom-panel-heading p { font-size: 0.72rem; }
+  .custom-section .custom-label { margin-bottom: 0.5rem; }
+  .custom-section .custom-input { padding: 0.6rem 0.75rem; margin-bottom: 1rem; font-size: 0.9rem; }
+  .custom-section .custom-options { gap: 0.4rem; margin-bottom: 1rem; }
+  .custom-section .custom-option { padding: 0.6rem 0.7rem; }
+  .custom-section .custom-option small { font-size: 0.63rem; margin-top: 0.15rem; }
+  .custom-section .custom-swatches button { width: 28px; height: 28px; }
+  .custom-section .custom-info { padding-top: 0.75rem; font-size: 0.68rem; }
+  .custom-section .custom-preview-stage { min-height: 180px; height: 210px; aspect-ratio: auto; }
+  .custom-section .custom-summary { padding-top: 1rem; }
+  .custom-section .custom-summary > div { margin-bottom: 0.5rem; }
+  .custom-section .custom-total { margin-top: 0.75rem; padding-top: 0.75rem; }
+  .custom-section .custom-order { padding: 0.75rem 1rem; }
+  #philosophy { height: calc(100svh - 80px); min-height: 640px; display: grid; grid-template-rows: 55% 45%; padding: 0 3rem; }
+  .philosophy-material, .philosophy-impact { padding: 2.5rem 0; display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 2fr); gap: 3rem; align-items: center; min-height: 0; }
+  .philosophy-material { padding: 1.25rem 0; }
+  .philosophy-impact { border-top: 1px solid #ffffff22; }
+  .philosophy-material h2, .philosophy-impact h2 { font-size: clamp(48px, 4.6vw, 84px); margin: 1.25rem 0 0; line-height: 1.08; }
+  .philosophy-impact h2 span { color: var(--color-acid); }
+  .philosophy-images { height: 100%; min-height: 0; overflow: hidden; align-items: center; }
+  .philosophy-process-image { height: 100%; min-height: 0; object-fit: contain; object-position: center; }
+  .philosophy-stats { background: none; gap: 1.5rem; }
+  .philosophy-stats > div { padding: 1rem 0 1rem 1.25rem; border-left: 1px solid #ffffff22; }
+  .philosophy-stats > div > span { font-size: clamp(40px, 3.8vw, 68px); }
+  .philosophy-stats h3 { font-size: 0.9rem; }
+  .philosophy-stats p { font-size: 0.78rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scenario-purchase > span, a.scenario-purchase::after { transition: none; }
+}
+@media (max-width: 1100px) {
+  .site-nav-links { gap: 1rem; }
+  .site-nav-links a { letter-spacing: 0.05em !important; }
+  .community-events-grid > div { padding: 1.5rem !important; }
+}
+@media (max-width: 767px) {
+  .presentation-page [id] { scroll-margin-top: 72px; }
+  .home-hero { padding: 7rem 1.25rem 3rem !important; min-height: 100svh !important; }
+  .home-hero > div > p:not(.font-ui) { padding-right: 0; }
+  .home-hero .font-ui { letter-spacing: 0.12em !important; }
+  .hero-actions { align-items: stretch; }
+  .hero-actions a { justify-content: center; padding: 1rem 1.2rem !important; }
+  .philosophy-material, .philosophy-impact { padding: 4rem 1.25rem; }
+  .philosophy-images { grid-template-columns: minmax(0, 1fr); }
+  .philosophy-stats { grid-template-columns: 1fr; }
+  .philosophy-stats > div { padding: 2rem 0; }
+  .sports-section > div:first-child { padding: 4rem 1.25rem 2rem !important; }
+  .sports-section { padding-bottom: 0 !important; }
+  .sc-card > div:last-child { padding: 2rem 1.25rem !important; }
+  .community-section { padding: 4rem 1.25rem !important; }
+  .community-events-grid { grid-template-columns: 1fr; }
+  .community-events-grid > div { padding: 2rem 1.25rem !important; }
+  .cta-section { padding: 5rem 1.25rem !important; }
+}
